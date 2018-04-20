@@ -11,7 +11,7 @@
 </body>
 <script>
 
-    // let 和const 命令
+    // let 命令
     for(let i=0;i<3;i++){
         console.log(i);
     }
@@ -26,5 +26,21 @@
 
     // 会输出三次 123 
     // 因为设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。
+
+
+    console.log(a);     // 2
+    var a = 2;
+
+    console.log(b);     // b is not defined
+    let b = 3;
+
+    //let 不存在变量提升
+
+
+
+
+
+
+    
 </script>
 </html>
