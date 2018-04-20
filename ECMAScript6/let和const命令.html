@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // let 和const 命令
+    for(let i=0;i<3;i++){
+        console.log(i);
+    }
+    // 0
+    // 1
+    // 2
+
+    for(let i=0;i<3;i++){
+        let i = '123';
+        console.log(i);
+    }
+
+    // 会输出三次 123 
+    // 因为设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。
+</script>
+</html>

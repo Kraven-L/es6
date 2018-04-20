@@ -11,15 +11,26 @@
 </body>
 <script>
     let [a,b,...c] = [1,2,3,4,5,6];
-    console.log(a);
-    console.log(b);
-    console.log(c);
+    console.log(a);     // 1
+    console.log(b);     // 2
+    console.log(c);     // [3,4,5,6]
 
     let [e,f,...g] = [1,[2],2];
-    console.log(e);
-    console.log(f);
-    console.log(g);
+    console.log(e);     // 1
+    console.log(f);     // [2]
+    console.log(g);     // [2]
 
     // ...会把剩下的元素全部放入一个数组，并将这个数组赋值给 ... 后面的变量
+
+
+    let[h] = [];
+    console.log(h);     // undefined
+
+    let[j,k] = [1];
+    console.log(j);     // [1]
+    console.log(k);     // undefined
+
+    // 如果解构不成功 变量的值就是 undefined
+
 </script>
 </html>
