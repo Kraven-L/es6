@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var tmp = new Date();
+
+    function f(){
+        console.log(tmp);
+    if(false){
+        var tmp = 'hello world';
+    }
+    }
+
+    f(); //没有块级作用域，导致内层变量可能会覆盖外层变量
+
+    {{{{let hello = 'hello world'}}}}
+
+    {{{{
+        let hello = 'hello php';
+        {let hello = 'hello world'}
+        console.log(hello);  //外层作用域无法读取内层作用域的变量   内层作用域可以定义外层作用域的同名变量
+    }}}}
+</script>
+</html>
